@@ -1,0 +1,3 @@
+DROP TABLE IF EXISTS battle.tasks;
+DROP TABLE IF EXISTS battle.users;
+DROP SCHEMA IF EXISTS battle;
