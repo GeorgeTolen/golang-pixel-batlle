@@ -1,10 +1,17 @@
 package main
+
 import (
 	"fmt"
+	"unsafe"
 )
 
 type Vertex struct {
 	Lat, Long float64
+}
+
+type stringString struct {
+	str unsafe.Pointer
+	len int
 }
 
 var m = map[string]Vertex{
@@ -16,7 +23,10 @@ var m = map[string]Vertex{
 	},
 }
 func main(){
-	fmt.Println(m)
+	s := "Muller"
+	fmt.Println("-----Example 1-----")
+	fmt.Printf("%T %[1]n\n", s)
+
 }
 
 
